@@ -4,27 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="609fe5d5-9a93-47f3-99f6-09359c662f6b" name="Changes" comment="Updated README.md">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/assets/animations/success.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/components/AttendanceSuccessModal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/constants/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/util/apiClient.js" afterDir="false" />
+    <list default="true" id="609fe5d5-9a93-47f3-99f6-09359c662f6b" name="Changes" comment="integrated with the backend">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/app/Student/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/Student/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/app/Student/profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/Student/profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/app/Student/scan.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/Student/scan.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/app/StudentDetails/[id].jsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/StudentDetails/[id].jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/app/Teacher/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/Teacher/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/app/Teacher/profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/Teacher/profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/app/Teacher/qrcode.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/Teacher/qrcode.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/app/TeacherDetails/[id].jsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/TeacherDetails/[id].jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/app/_layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/_layout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/app/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/components/StudentSubjectContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/components/StudentSubjectContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,14 +14,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="89" />
+    <option name="cachedIndexableFilesCount" value="91" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Dockerfile" />
-        <option value="JavaScript File" />
         <option value="JSX File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -81,30 +63,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Spring Boot.AttendanceApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "javascript.preferred.runtime.type.id": "node",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/QR Attendance App/mobile/animations",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "D:\\QR Attendance App\\mobile\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AttendanceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/QR Attendance App/mobile/animations&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\QR Attendance App\\mobile\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\QR Attendance App\mobile\animations" />
@@ -113,7 +96,7 @@
       <recent name="D:\QR Attendance App\mobile\assets" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="npm.start">
     <configuration name="AttendanceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
       <module name="attendance" />
@@ -142,8 +125,19 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/mobile/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -170,7 +164,11 @@
       <workItem from="1775045418509" duration="2556000" />
       <workItem from="1775049316475" duration="13999000" />
       <workItem from="1775120778586" duration="7602000" />
-      <workItem from="1775137394675" duration="4585000" />
+      <workItem from="1775137394675" duration="4937000" />
+      <workItem from="1775241575445" duration="20000" />
+      <workItem from="1775241615727" duration="81000" />
+      <workItem from="1775245207510" duration="2436000" />
+      <workItem from="1775416228753" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="Updated README.md">
       <option name="closed" value="true" />
@@ -180,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774321672950</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="integrated with the backend">
+      <option name="closed" value="true" />
+      <created>1775162974874</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1775162974874</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +194,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md" />
+    <MESSAGE value="integrated with the backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="integrated with the backend" />
   </component>
 </project>
