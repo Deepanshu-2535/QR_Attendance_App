@@ -10,6 +10,8 @@ import api from '../../util/apiClient'
 import { ENDPOINTS } from '../../constants/api'
 import Loading from '../../components/Loading'
 import Toast from 'react-native-toast-message'
+import { useFocusEffect } from 'expo-router'
+import { useCallback } from 'react'
 export default function Index() {
   const [studentDetails, setStudentDetails] = useState({
     firstName: '',
@@ -20,14 +22,14 @@ export default function Index() {
     subjectWiseAttendance: []
   });
   const [loading, setLoading] = useState(true);
-  useEffect(() => {
+  useFocusEffect(useCallback(() => {
     async function loadStudentDetails() {
-      try{
-      const data = await api.get(ENDPOINTS.STUDENT.OVERVIEW)
-      setStudentDetails(data);
+      try {
+        const data = await api.get(ENDPOINTS.STUDENT.OVERVIEW)
+        setStudentDetails(data);
       }
       catch (error) {
-        Toast.show({type:"error", text1:"Cannot load Student details",text2:error.message});
+        Toast.show({ type: "error", text1: "Cannot load Student details", text2: error.message });
         console.error(error);
       }
       finally {
@@ -35,7 +37,8 @@ export default function Index() {
       }
     }
     loadStudentDetails();
-  },[])
+  }, [])
+  )
 
   let overAllTotalAttendance = studentDetails.totalClasses
     ? Math.round((studentDetails.attended / studentDetails.totalClasses) * 100)
@@ -48,7 +51,7 @@ export default function Index() {
   } else {
     fillColor = colors.primary
   }
-  if(loading) {
+  if (loading) {
     return <Loading />
   }
   return (
